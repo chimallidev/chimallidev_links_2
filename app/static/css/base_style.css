@@ -67,3 +67,10 @@ html {
     background-color: var(--third-color);
     color: var(--secondary-color);
 }
+
+.base__content {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas: ". principal .";
+}
