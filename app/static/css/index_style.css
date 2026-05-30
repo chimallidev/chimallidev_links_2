@@ -1,7 +1,19 @@
 .index__content {
     grid-area: principal;
+    margin-top: 80px;
 }
 
 #header-separator {
     margin-top: 5px;
+}
+
+.index__descripcion {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.index__descripcion p {
+    text-align: left;
 }
