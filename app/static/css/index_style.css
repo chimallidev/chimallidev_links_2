@@ -1,3 +1,7 @@
 .index__content {
     grid-area: principal;
 }
+
+#header-separator {
+    margin-top: 5px;
+}

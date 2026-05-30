@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
+{% from 'components/separator.html' import separator %}
+
 {% block components_style %}
 <link rel="stylesheet" href="{{url_for('static', path='css/index_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/header_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/icon_link_style.css')}}">
+<link rel="stylesheet" href="{{url_for('static', path='css/components/separator_style.css')}}">
 {% endblock %}
 
 {% block content %}
@@ -12,6 +15,10 @@
 
 <div class="index__content">
     {% include 'components/header.html' %}
+    {{separator(
+        css_id = "header-separator",
+        thickness = "3px"
+    )}}
 
 </div>
 {% endblock %}
