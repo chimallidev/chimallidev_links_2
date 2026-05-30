@@ -1,5 +1,5 @@
 .icon-link {
-    --icon-padding: 3px;
+    --icon-padding: 6px;
 
     display: inline-flex;
 
@@ -43,6 +43,7 @@
 @media (hover: hover) and (pointer: fine) {
     .icon-link:hover {
         color: var(--icon-link-hover-color);
+        background-color: var(--icon-link-hover-background);
 
         transform: scale(1.1);
     }
@@ -50,6 +51,7 @@
 
 .icon-link:active {
     color: var(--icon-link-active-color);
+    background-color: var(--icon-link-active-background);
 
     transform: scale(0.9);
 }

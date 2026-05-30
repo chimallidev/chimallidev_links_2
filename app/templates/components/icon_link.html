@@ -21,7 +21,9 @@
     color="currentColor",
     background="transparent",
     hover_color=None,
+    hover_background=None,
     active_color=None,
+    active_background=None,
     name="icon-link"
 ) %}
 
@@ -37,7 +39,9 @@
         --icon-link-color: {{ color }};
         --icon-link-background: {{ background }};
         --icon-link-hover-color: {{ hover_color or color }};
+        --icon-link-hover-background: {{ hover_background or background }};
         --icon-link-active-color: {{ active_color or color }};
+        --icon-link-active-background: {{ active_background or background }};
     "
 >
     <svg

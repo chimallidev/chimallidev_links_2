@@ -1,14 +1,15 @@
 from fastapi import APIRouter, Request, HTTPException, status
 from fastapi.responses import HTMLResponse
 from app.core.templates import templates
-from app.core.constants import META
+from app.core.constants import META, HEADER_LINKS
 
 router = APIRouter()
 
 @router.get("/", response_class= HTMLResponse, status_code= status.HTTP_200_OK)
 async def home(request: Request):
     context = {
-        "meta": META
+        "meta": META,
+        "header_links": HEADER_LINKS
     }
 
     try:
