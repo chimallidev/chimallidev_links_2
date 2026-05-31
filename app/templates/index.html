@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 
 {% from 'components/separator.html' import separator %}
+{% from 'components/chimalli_button.html' import chimalli_button %}
 
 {% block components_style %}
 <link rel="stylesheet" href="{{url_for('static', path='css/index_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/header_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/icon_link_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/separator_style.css')}}">
+<link rel="stylesheet" href="{{url_for('static', path='css/components/chimalli_button_style.css')}}">
 {% endblock %}
 
 {% block content %}
@@ -25,6 +27,26 @@
         <p>Especializado en 🐍 Python, FastAPI y Jinja2 para construir soluciones web modernas, complementadas con HTML, CSS y JavaScript en el frontend.</p>
         <p>Comparto recursos, experiencias y aprendizajes sobre programación. ¡Bienvenidx! 🚀</p>
     </section>
+
+    {{ chimalli_button({
+
+    "type": "link",
+    "url": "#",
+
+    "identifier": "portfolio",
+    "state": "turquoise",
+    "border_state": "active",
+
+    "open_new_tab": false,
+
+    "border_color": "#04c7ce",
+
+    "svg_id": "icon-code-slash",
+
+    "title": "Portafolio",
+    "description": "Visita mis proyectos y desarrollos"
+
+}) }}
 
 </div>
 {% endblock %}
