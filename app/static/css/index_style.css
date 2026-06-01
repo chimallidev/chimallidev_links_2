@@ -17,3 +17,15 @@
 .index__descripcion p {
     text-align: left;
 }
+
+.index__main-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.index__main-buttons .chimalli-button:last-child {
+    margin-top: 25px;
+}

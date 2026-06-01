@@ -28,25 +28,13 @@
         <p>Comparto recursos, experiencias y aprendizajes sobre programación. ¡Bienvenidx! 🚀</p>
     </section>
 
-    {{ chimalli_button({
-
-    "type": "link",
-    "url": "#",
-
-    "identifier": "portfolio",
-    "state": "turquoise",
-    "border_state": "active",
-
-    "open_new_tab": false,
-
-    "border_color": "#04c7ce",
-
-    "svg_id": "icon-code-slash",
-
-    "title": "Portafolio",
-    "description": "Visita mis proyectos y desarrollos"
-
-}) }}
+    <section class="index__main-buttons">
+        {% if main_buttons %}
+            {% for main_button in main_buttons %}
+                {{chimalli_button(main_button)}}
+            {% endfor %}
+        {% endif %}
+    </section>
 
 </div>
 {% endblock %}
