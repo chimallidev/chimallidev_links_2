@@ -36,6 +36,20 @@
         {% endif %}
     </section>
 
+    <section class="index__destacado">
+
+        <h2 class="index__h2">
+            {{ "Destacado" | upper }}
+        </h2>
+
+        {% for item in destacados %}
+        <article class="index__destacado-item">
+            {{ item }}
+        </article>
+        {% endfor %}
+
+    </section>
+
 </div>
 {% endblock %}
 

@@ -29,3 +29,31 @@
 .index__main-buttons .chimalli-button:last-child {
     margin-top: 25px;
 }
+
+.index__destacado {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 80px;
+}
+
+.index__h2 {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+
+    font-size: clamp(18px, 5vw, 28px);
+    line-height: 1.1;
+    text-align: left;
+    font-weight: 700;
+}
+
+.index__destacado-item {
+    flex: 0 0 calc(50% - 2.5px);
+    width: calc(50% - 2.5px);
+}
+
+@media (max-width: 768px) {
+    .index__destacado-item {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}
