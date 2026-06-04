@@ -1,0 +1,29 @@
+{% macro chimalli_card(card_data={}) %}
+
+{% set image = card_data.get('image', '') %}
+{% set description = card_data.get('description', '') %}
+{% set identifier = card_data.get('id', 'chimalli-card') %}
+
+<article
+    class="chimalli-card"
+    data-id="{{ identifier }}"
+>
+    <div class="chimalli-card__content">
+
+        <div class="chimalli-card__image-container">
+            <img
+                class="chimalli-card__image"
+                src="{{ image }}"
+                alt="{{ description }}"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="chimalli-card__description">
+            {{ description }}
+        </div>
+
+    </div>
+</article>
+
+{% endmacro %}

@@ -104,3 +104,17 @@ MAIN_BUTTONS = [
         "description": "¿Quieres apoyarme?"
     }
 ]
+
+#Cards destacados
+DESTACADOS_CARDS = [
+    {   
+        'id': 'card-python',
+        'image': 'static/img/logo_chimallidev_100.webp',
+        'description': 'Sitio web de artículos de diulgación científica sobre ejercicio y habitos saludables.'
+    },
+    {
+        'id': 'card-python',
+        'image': 'static/img/logo_chimallidev_100.webp',
+        'description': 'Desarrollo web Full Stack con Python, FastAPI y Jinja2.'
+    }
+]

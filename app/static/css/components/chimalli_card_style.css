@@ -1,0 +1,172 @@
+.chimalli-card {
+    position: relative;
+    height: 300px;
+    width: 100%;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    background: var(--third-color);
+}
+
+/* -------------------------------- */
+/* EFECTO GLOWING CORNER            */
+/* -------------------------------- */
+
+.chimalli-card::before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    width: 200%;
+    height: 600px;
+    background: radial-gradient(var(--main-color), transparent);
+    animation: chimalli-card-animate 1.5s linear infinite;
+}
+
+.chimalli-card::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: var(--third-color);
+}
+/* -------------------------------- */
+/* CONTENIDO REAL                   */
+/* -------------------------------- */
+
+.chimalli-card__content {
+    position: relative;
+
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+/* -------------------------------- */
+/* ANIMACIÓN                        */
+/* -------------------------------- */
+
+@keyframes chimalli-card-animate {
+    0% {
+        transform: translate(-300px, -300px);
+    }
+
+    25% {
+        transform: translate(0px, -300px);
+    }
+
+    50% {
+        transform: translate(0px, 0px);
+    }
+
+    75% {
+        transform: translate(-300px, 0px);
+    }
+
+    100% {
+        transform: translate(-300px, -300px);
+    }
+}
+
+/* -------------------------------- */
+/* IMAGEN                           */
+/* -------------------------------- */
+
+.chimalli-card__image-container {
+    width: 100%;
+
+    height: 66%;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.chimalli-card__image {
+    display: block;
+
+    
+
+    object-fit: cover;
+
+    object-position: center center;
+
+    transform: scale(1);
+
+    transform-origin: center center;
+
+    transition:
+        transform 0.35s ease;
+}
+
+/* -------------------------------- */
+/* DESCRIPCIÓN                      */
+/* -------------------------------- */
+
+.chimalli-card__description {
+    padding: 4px;
+    margin-top: 8px;
+
+    font-family: "Roboto Mono", monospace;
+
+    color: var(--secondary-color);
+
+    transition:
+        color 0.35s ease;
+}
+
+/* -------------------------------- */
+/* HOVER                            */
+/* -------------------------------- */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .chimalli-card:hover::before {
+        opacity: 1;
+    }
+
+    .chimalli-card:hover .chimalli-card__image {
+        transform: scale(1.05);
+    }
+
+    .chimalli-card:hover .chimalli-card__description {
+        color: var(--main-color);
+    }
+}
+
+/* -------------------------------- */
+/* ACTIVE                           */
+/* -------------------------------- */
+
+.chimalli-card:active::before {
+    opacity: 0;
+}
+
+.chimalli-card:active {
+    box-shadow:
+        inset 0 0 8px var(--main-color-light),
+        inset 0 0 16px var(--main-color-light),
+        inset 0 0 24px var(--main-color-light),
+        0 0 8px var(--main-color-light),
+        0 0 16px var(--main-color-light),
+        0 0 24px var(--main-color-light),
+        0 0 32px var(--main-color-light);
+}
+
+.chimalli-card:active .chimalli-card__image {
+    transform: scale(1.08);
+
+    transition-duration: 0.12s;
+}
+
+.chimalli-card:active .chimalli-card__description {
+    color: var(--main-color-light);
+
+    transition-duration: 0.12s;
+}

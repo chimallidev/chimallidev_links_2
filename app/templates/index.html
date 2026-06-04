@@ -2,6 +2,7 @@
 
 {% from 'components/separator.html' import separator %}
 {% from 'components/chimalli_button.html' import chimalli_button %}
+{% from 'components/chimalli_card.html' import chimalli_card %}
 
 {% block components_style %}
 <link rel="stylesheet" href="{{url_for('static', path='css/index_style.css')}}">
@@ -9,6 +10,7 @@
 <link rel="stylesheet" href="{{url_for('static', path='css/components/icon_link_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/separator_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/chimalli_button_style.css')}}">
+<link rel="stylesheet" href="{{url_for('static', path='css/components/chimalli_card_style.css')}}">
 {% endblock %}
 
 {% block content %}
@@ -41,12 +43,13 @@
         <h2 class="index__h2">
             {{ "Destacado" | upper }}
         </h2>
-
-        {% for item in destacados %}
-        <article class="index__destacado-item">
-            {{ item }}
-        </article>
-        {% endfor %}
+        {% if destacados_cards %}
+            {% for card in destacados_cards %}
+                <article class="index__destacado-item">
+                    {{ chimalli_card(card) }}
+                </article>
+            {% endfor %}
+        {% endif %}
 
     </section>
 
