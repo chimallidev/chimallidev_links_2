@@ -43,13 +43,15 @@
         <h2 class="index__h2">
             {{ "Destacado" | upper }}
         </h2>
-        {% if destacados_cards %}
+        <section class="index__destacado-cards">
+            {% if destacados_cards %}
             {% for card in destacados_cards %}
-                <article class="index__destacado-item">
+                <div class="index__destacado-item-{{loop.index}}">
                     {{ chimalli_card(card) }}
-                </article>
+                </div>
             {% endfor %}
         {% endif %}
+        </section>
 
     </section>
 

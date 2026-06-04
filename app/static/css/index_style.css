@@ -23,7 +23,7 @@
     flex-direction: column;
     gap: 40px;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .index__main-buttons .chimalli-button:last-child {
@@ -44,16 +44,39 @@
     line-height: 1.1;
     text-align: left;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.index__destacado-item {
-    flex: 0 0 calc(50% - 2.5px);
-    width: calc(50% - 2.5px);
+.index__destacado-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: 
+    "card1 card2";
 }
+
+.index__destacado-item-1 {
+    grid-area: card1;
+}
+
+.index__destacado-item-2 {
+    grid-area: card2;
+}
+
 
 @media (max-width: 768px) {
     .index__destacado-item {
         flex: 0 0 100%;
         width: 100%;
+    }
+
+    .index__destacado-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas: 
+        "card1"
+        "card2";
     }
 }
