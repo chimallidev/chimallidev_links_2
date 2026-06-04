@@ -46,6 +46,7 @@
     flex-direction: column;
 
     overflow: hidden;
+    text-decoration: none;
 }
 
 /* -------------------------------- */
