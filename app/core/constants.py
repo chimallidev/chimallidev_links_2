@@ -109,14 +109,14 @@ MAIN_BUTTONS = [
 DESTACADOS_CARDS = [
     {   
         'id': 'card-python',
-        'image': 'static/img/logo_chimallidev_100.webp',
+        'image': 'static/img/Soluciones_Inteligentes.webp',
         'url': 'https://portafolio-chimallidev.onrender.com/portafolio/soluciones_inteligentes',
-        'description': 'Sitio web de artículos de diulgación científica sobre ejercicio y habitos saludables. dssdas asdsadsd sdsd sdsd sadsd sasdas dsd asdsd sasadsad'
+        'description': 'Sitio web de artículos de diulgación científica sobre ejercicio y habitos saludables.'
     },
     {
         'id': 'card-python',
-        'image': 'static/img/logo_chimallidev_100.webp',
+        'image': 'static/img/app_soluciones_inteligentes.webp',
         'url': 'https://portafolio-chimallidev.onrender.com/portafolio/app-movil-soluciones-inteligentes',
-        'description': 'Desarrollo web Full Stack con Python, FastAPI y Jinja2.'
+        'description': 'App móvil que centraliza artículos de Soluciones Inteligentes y añade nuevas funciones.'
     }
 ]

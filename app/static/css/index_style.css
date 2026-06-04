@@ -1,6 +1,7 @@
 .index__content {
     grid-area: principal;
     margin-top: 80px;
+    width: 100%;
 }
 
 #header-separator {
@@ -35,6 +36,7 @@
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 80px;
+    width: 100%;
 }
 
 .index__h2 {
@@ -58,10 +60,14 @@
 
 .index__destacado-item-1 {
     grid-area: card1;
+    width: 100%;
+    overflow: hidden;
 }
 
 .index__destacado-item-2 {
     grid-area: card2;
+    width: 100%;
+    overflow: hidden;
 }
 
 

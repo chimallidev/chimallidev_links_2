@@ -71,7 +71,7 @@ html {
 .base__content {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: auto 600px auto;
     grid-template-areas: ". principal .";
 }
 

@@ -1,5 +1,6 @@
 .chimalli-card {
     position: relative;
+    max-height: 100%;
     height: 300px;
     width: 100%;
 
@@ -81,8 +82,9 @@
 
 .chimalli-card__image-container {
     width: 100%;
-
+    max-width: 100%;
     height: 66%;
+    aspect-ratio: 16/9;
 
     overflow: hidden;
     display: flex;
@@ -92,15 +94,15 @@
 .chimalli-card__image {
     display: block;
 
-    
+    width: 100%;
 
     object-fit: cover;
 
-    object-position: center center;
+    
 
     transform: scale(1);
 
-    transform-origin: center center;
+   
 
     transition:
         transform 0.35s ease;
