@@ -55,8 +55,22 @@
 
     </section>
 
+    <section class="index__contacto">
+        <h2 class="index__h2">{{ "Contacto" | upper }}</h2>
+
+        <section class="index__contacto-buttons">
+            {% if contacto_buttons %}
+                {% for contacto_button in contacto_buttons %}
+                    {{chimalli_button(contacto_button)}}
+                {% endfor %}
+            {% endif %}
+        </section>
+    </section>
+
 </div>
 {% endblock %}
 
 {% block components_scripts %}
+<script type="module" src="/static/js/copy-button.js"></script>
+<script type="module" src="/static/js/main.js"></script>
 {% endblock %}

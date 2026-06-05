@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Request, HTTPException, status
 from fastapi.responses import HTMLResponse
 from app.core.templates import templates
-from app.core.constants import META, HEADER_LINKS, MAIN_BUTTONS, DESTACADOS_CARDS
+from app.core.constants import META, HEADER_LINKS, MAIN_BUTTONS, DESTACADOS_CARDS, CONTACTO_BUTTONS
 
 router = APIRouter()
 
@@ -11,6 +11,7 @@ async def home(request: Request):
         "meta": META,
         "header_links": HEADER_LINKS,
         "main_buttons": MAIN_BUTTONS,
+        "contacto_buttons": CONTACTO_BUTTONS,
         "destacados_cards": DESTACADOS_CARDS
     }
 

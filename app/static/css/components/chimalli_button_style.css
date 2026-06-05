@@ -235,3 +235,9 @@
 .chimalli-button--turquoise:active {
     color: var(--third-color);
 }
+
+.chimalli-button--locked {
+    pointer-events: none;
+    background: var(--fourth-color-light);
+    color: var(--third-color);
+}

@@ -61,13 +61,22 @@
 .index__destacado-item-1 {
     grid-area: card1;
     width: 100%;
-    overflow: hidden;
 }
 
 .index__destacado-item-2 {
     grid-area: card2;
     width: 100%;
-    overflow: hidden;
+}
+
+.index__contacto {
+    margin: 25px 0 80px 0;
+}
+
+.index__contacto-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 

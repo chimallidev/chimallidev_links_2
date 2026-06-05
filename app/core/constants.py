@@ -105,6 +105,36 @@ MAIN_BUTTONS = [
     }
 ]
 
+#Botones de contacto
+CONTACTO_BUTTONS = [
+    {
+        "type": "button",
+
+        "identifier": "copy-button",
+
+        "copy_text": "chimalli.dev@gmail.com",
+
+        "svg_id": "icon-clipboard",
+
+        "title": "Copiar",
+
+        "description": "chimalli.dev@gmail.com"
+    },
+    {
+        "type": "link",
+
+        "url": "mailto:chimalli.dev@gmail.com",
+
+        "open_new_tab": True,
+
+        "svg_id": "icon-envelope-fill",
+
+        "title": "Contactar",
+
+        "description": "Envíame un correo."
+    }
+]
+
 #Cards destacados
 DESTACADOS_CARDS = [
     {   
