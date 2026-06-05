@@ -85,7 +85,7 @@ html {
 
 @media (max-width: 768px) {
     .base__content { 
-        grid-template-columns: 15px 1fr 15px;
+        grid-template-columns: 25px 1fr 25px;
         grid-template-areas: ". principal .";
     }
 }

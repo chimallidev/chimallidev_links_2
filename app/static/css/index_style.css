@@ -53,7 +53,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    gap: 4px;
     grid-template-areas: 
     "card1 card2";
 }
@@ -88,8 +88,7 @@
 
     .index__destacado-cards {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 5px;
+        gap: 15px;
         grid-template-areas: 
         "card1"
         "card2";
