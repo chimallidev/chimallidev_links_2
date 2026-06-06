@@ -37,7 +37,8 @@
     <link rel="stylesheet" href="{{url_for('static', path='css/base_style.css')}}">
 
     {# Estilos de componentes más usados #}
-    
+    <link rel="stylesheet" href="{{url_for('static', path='css/components/nav_bar_style.css')}}">
+
     {# Estilos de componentes de cada página #}
     {% block components_style %}
     {% endblock %}
@@ -55,6 +56,8 @@
     {% include 'components/footer.html' %}
 
     {# JS global #}
+    <script type="module" src="{{url_for('static', path='js/nav_bar.js')}}"></script>
+    <script type="module" src="{{url_for('static', path='js/base_main.js')}}"></script>
 
     {# JS para cada página #}
     {% block components_scripts %}
