@@ -37,7 +37,7 @@ MAIN_BUTTONS = [
     {
         "type": "link",
 
-        "url": "#",
+        "url": "/cursos",
 
         "open_new_tab": False,
 
