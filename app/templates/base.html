@@ -39,6 +39,7 @@
     {# Estilos de componentes más usados #}
     <link rel="stylesheet" href="{{url_for('static', path='css/components/nav_bar_style.css')}}">
     <link rel="stylesheet" href="{{url_for('static', path='css/components/footer_style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/components/floating_button_style.css')}}">
 
     {# Estilos de componentes de cada página #}
     {% block components_style %}
@@ -55,6 +56,7 @@
     </main>
 
     {% include 'components/footer.html' %}
+    {% include 'components/floating_button.html' %}
 
     {# JS global #}
     <script type="module" src="{{url_for('static', path='js/nav_bar.js')}}"></script>
