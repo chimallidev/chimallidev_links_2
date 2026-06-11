@@ -35,6 +35,30 @@ HEADER_LINKS = [
         "active_color": "var(--main-color)",
         "active_background": "var(--third-color)",
         "name": "enlace a x"
+    },
+    {
+        "svg_id": "icon-facebook",
+        "url": "https://www.facebook.com/people/Chimallidev/61574578197815",
+        "size": "20px",
+        "color": "var(--third-color)",
+        "background": "var(--fourth-color)",
+        "hover_color": "var(--third-color)",
+        "hover_background": "var(--secondary-color)",
+        "active_color": "var(--main-color)",
+        "active_background": "var(--third-color)",
+        "name": "enlace a facebook"
+    },
+    {
+        "svg_id": "icon-linkedin",
+        "url": "https://www.linkedin.com/in/chimallidev",
+        "size": "20px",
+        "color": "var(--third-color)",
+        "background": "var(--fourth-color)",
+        "hover_color": "var(--third-color)",
+        "hover_background": "var(--secondary-color)",
+        "active_color": "var(--main-color)",
+        "active_background": "var(--third-color)",
+        "name": "enlace a x"
     }
 ]
 
