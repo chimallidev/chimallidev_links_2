@@ -4,6 +4,12 @@ META = {
     "descripcion": "Vacío"
 }
 
+#CURSOS META
+CURSOS_META = {
+    "titulo": "Recursos gratis",
+    "descripcion": "Vacío"
+}
+
 #HEADER LINKS
 HEADER_LINKS = [
     {
@@ -134,6 +140,79 @@ CONTACTO_BUTTONS = [
         "description": "Envíame un correo."
     }
 ]
+
+#Botones cursos gratis
+CURSOS_GRATIS_BUTTONS = [
+    {
+        "type": "link",
+
+        "url": "https://www.youtube.com/playlist?list=PLiIUrXdfXvdX7EskTVa2rVB_ssGsVT1V6",
+
+        "open_new_tab": True,
+
+        "svg_id": "icon-python",
+
+        "title": "Python desde cero",
+
+        "description": "Fundamentos de Python"
+    },
+    {
+        "type": "link",
+
+        "url": "https://www.youtube.com/playlist?list=PLiIUrXdfXvdXWpi__sbjxlcmE8ZjW-1ML",
+
+        "open_new_tab": True,
+
+        "svg_id": "icon-python-ejercicios",
+
+        "title": "Python: Ejercicios Resueltos",
+
+        "description": "Aprende paso a paso"
+    },
+    {
+        "type": "link",
+
+        "url": "/cursos",
+
+        "open_new_tab": True,
+
+        "svg_id": "icon-empty",
+
+        "title": "Próximamente",
+
+        "description": "En desarrollo"
+    }
+]
+
+#Botones Mucho más en 
+MUCHO_MAS_BUTTON = {
+    "type": "link",
+
+    "url": "https://www.youtube.com/@Chimallidev",
+
+    "open_new_tab": True,
+
+    "svg_id": "icon-youtube",
+
+    "title": "Youtube",
+
+    "description": "Videos sobre programación"
+}
+
+#Boton volver
+VOLVER_BUTTON = {
+    "type": "link",
+
+    "url": "/",
+
+    "open_new_tab": False,
+
+    "svg_id": "icon-home",
+
+    "title": "Volver",
+
+    "description": "Sitio de enlaces de Chimallidev"
+}
 
 #Cards destacados
 DESTACADOS_CARDS = [
