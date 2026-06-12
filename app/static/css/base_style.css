@@ -75,6 +75,11 @@ html {
     grid-template-areas: ". principal .";
 }
 
+.base__content::selection {
+    background: var(--main-color);
+    color: var(--secondary-color);
+}
+
 @media (max-width: 1024px) {
     .base__content {
         
