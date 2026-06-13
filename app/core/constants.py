@@ -198,7 +198,7 @@ CURSOS_GRATIS_BUTTONS = [
 
         "url": "/cursos",
 
-        "open_new_tab": True,
+        "open_new_tab": False,
 
         "svg_id": "icon-empty",
 
