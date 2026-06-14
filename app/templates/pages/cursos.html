@@ -3,6 +3,14 @@
 {% from 'components/separator.html' import separator %}
 {% from 'components/chimalli_button.html' import chimalli_button %}
 
+{% block url_canonica %}
+<!-- URL canónica -->
+<link
+    rel="canonical"
+    href="https://chimallidev-links.onrender.com/cursos"
+>
+{% endblock %}
+
 {% block components_style %}
 <link rel="stylesheet" href="{{url_for('static', path='css/pages/cursos_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/header_style.css')}}">

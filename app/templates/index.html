@@ -4,6 +4,14 @@
 {% from 'components/chimalli_button.html' import chimalli_button %}
 {% from 'components/chimalli_card.html' import chimalli_card %}
 
+{% block url_canonica %}
+<!-- URL canónica -->
+<link
+    rel="canonical"
+    href="https://chimallidev-links.onrender.com/"
+>
+{% endblock %}
+
 {% block components_style %}
 <link rel="stylesheet" href="{{url_for('static', path='css/index_style.css')}}">
 <link rel="stylesheet" href="{{url_for('static', path='css/components/header_style.css')}}">
