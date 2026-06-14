@@ -1,13 +1,25 @@
 #META
 META = {
     "titulo": "Desarrollador",
-    "descripcion": "Vacío"
+    "descripcion": "Chimallidev es un desarrollador web Full Stack especializado en Python, FastAPI y Jinja2. Descubre recursos, proyectos y contenido sobre programación y desarrollo web."
 }
 
 #CURSOS META
 CURSOS_META = {
     "titulo": "Recursos gratis",
-    "descripcion": "Vacío"
+    "descripcion": "Chimallidev es un desarrollador web Full Stack especializado en Python, FastAPI y Jinja2. Descubre recursos, proyectos y contenido sobre programación y desarrollo web."
+}
+
+#Open Graph
+OG = {
+    "titulo" : "Chimallidev | Enlaces",
+    "descripcion" : "Todos mis enlaces en un solo lugar. Contenido sobre Python, FastAPI, Jinja2, desarrollo web, recursos de programación y proyectos de Chimallidev.",
+    "image" : "chimallidev-links.onrender.com/static/img/og_chimallidev_links.png",
+    "width" : 1199,
+    "height" : 675,
+    "url" : "chimallidev-links.onrender.com/",
+    "name" : "Chimallidev",
+    "locale" : "es_MX"
 }
 
 #HEADER LINKS

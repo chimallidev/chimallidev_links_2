@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Request, HTTPException, status
 from fastapi.responses import HTMLResponse
 from app.core.templates import templates
-from app.core.constants import CURSOS_META, HEADER_LINKS, CURSOS_GRATIS_BUTTONS, MUCHO_MAS_BUTTON, VOLVER_BUTTON
+from app.core.constants import CURSOS_META, HEADER_LINKS, OG,CURSOS_GRATIS_BUTTONS, MUCHO_MAS_BUTTON, VOLVER_BUTTON
 from app.utils.datetime import get_current_year
 
 router = APIRouter()
@@ -10,6 +10,7 @@ router = APIRouter()
 async def cursos(request: Request):
     context = {
         "meta": CURSOS_META,
+        "og": OG,
         "header_links": HEADER_LINKS,
         "cursos_gratis_buttons": CURSOS_GRATIS_BUTTONS,
         "mucho_mas_button": MUCHO_MAS_BUTTON,
