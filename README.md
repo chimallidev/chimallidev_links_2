@@ -4,7 +4,7 @@
 
 ## Descripción
 
-Página web de enlaces para centralizar mis proyectos, redes sociales y contenido sobre programación. Esta versión 4 está actualizada con mi stack actual centrado en Python, FastAPI y Jinja2, e incluye mejoras en diseño, estructura y experiencia de usuario para una navegación más fluida.
+Página web de enlaces para centralizar mis proyectos, redes sociales y contenido sobre programación. Esta versión 4 está actualizada con mi stack actual centrado en Python, FastAPI y Jinja2, e incluye mejoras en diseño, estructura y experiencia de usuario para una navegación más clara.
 
 ## Autor 💻
 **Erick Roman**
