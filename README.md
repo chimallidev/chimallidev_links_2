@@ -14,6 +14,7 @@ Página web de enlaces para centralizar mis proyectos, redes sociales y contenid
 
 ## Vista Previa
 
+![Página web de enlaces Chimallidev v4](app/static/img/screenshots/vista_previa.png)
 
 ## DEMO, Ver ejemplo en vivo
 
