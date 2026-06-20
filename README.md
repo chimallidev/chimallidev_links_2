@@ -1,6 +1,6 @@
 # <img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="30px">&nbsp;Página de enlaces de Chimallidev v4
 
-![vista previa página web de enlaces v4](app/static/img/og_chimallidev_links.png)
+![Página web de enlaces Chimallidev v4](app/static/img/og_chimallidev_links.png)
 
 ## Descripción
 
@@ -14,7 +14,7 @@ Página web de enlaces para centralizar mis proyectos, redes sociales y contenid
 
 ## Vista Previa
 
-![Página web de enlaces Chimallidev v4](app/static/img/screenshots/vista_previa.png)
+![Vista previa página web de enlaces Chimallidev v4](app/static/img/screenshots/vista_previa.png)
 
 ## DEMO, Ver ejemplo en vivo
 
