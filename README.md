@@ -20,7 +20,7 @@ Página web de enlaces para centralizar mis proyectos, redes sociales y contenid
 
 [DEMO](https://chimallidev-links.onrender.com/)
 
-## Tecnologías
+## Tecnologías utilizadas
 
 <h4> Lenguaje </h4>
 <span> 
